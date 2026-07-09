@@ -1,0 +1,51 @@
+name: loadid
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.11
+
+  # Scientific
+  - pandas
+  - numpy
+  - scikit-learn
+  - statsmodels
+  - xgboost
+  - lightgbm
+
+  # Bayesian
+  - pytorch
+  - pyro-ppl
+  - arviz
+  - pymc
+
+  # Geospatial
+  - geopandas
+  - shapely
+  - fiona
+  - pyproj
+  - rasterio
+  - cartopy
+  - contextily
+  - owslib
+
+  # Plotting
+  - matplotlib
+  - seaborn
+  - plotly
+
+  # Interactive
+  - jupyterlab
+  - ipykernel
+  - ipython
+  - ipywidgets
+  
+  # I/O
+  - openpyxl
+  - pyarrow
+
+  # Utilities
+  - tqdm
+  - requests
+  - pip

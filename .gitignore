@@ -1,6 +1,6 @@
 # Ignore raw data files
-Data/Elec/Raw/
-Data/Gas/Raw/
+Data/Elec/Raw/*
+Data/Gas/Raw/*
 
 # Keep the folders
 !Data/Elec/Raw/.gitkeep

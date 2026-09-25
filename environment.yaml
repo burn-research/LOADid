@@ -2,6 +2,7 @@ name: loadid
 
 channels:
   - conda-forge
+  - defaults
 
 dependencies:
   - python=3.11
@@ -30,6 +31,10 @@ dependencies:
   - contextily
   - owslib
 
+  # Date and time
+  - holidays
+  - astral
+
   # Plotting
   - matplotlib
   - seaborn
@@ -49,3 +54,7 @@ dependencies:
   - tqdm
   - requests
   - pip
+
+  # Meteo
+  - pip:
+    - openmeteo-requests

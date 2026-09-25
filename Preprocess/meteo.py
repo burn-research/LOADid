@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Apr 26
-
-@author: hanssens
-"""
-
 #%% Helpers
 
 import os
@@ -227,6 +220,7 @@ df_meteo_wavg, stations_connection = population_weighted_average_meteo(gdf_rmi, 
 df_meteo_savg = simple_average_meteo(gdf_rmi)
 
 #%% Plot
+
 import matplotlib.pyplot as plt
 plt.rc('text', usetex=True) # Use LaTeX for rendering text
 plt.rc('font', family='serif', size=12)
@@ -253,7 +247,7 @@ df_meteo_savg.plot(ax=axs[1], x='DATE', y='TEMP_AVG', color='k', label='Simple a
 df_meteo_wavg.plot(ax=axs[1], x='DATE', y='TEMP_AVG', color='orangered', label='Population-weighted', linestyle='--')
 
 axs[1].set_xlabel('Date')
-axs[1].set_ylabel('Average Temperature (°C)')
+axs[1].set_ylabel(r'Average Temperature $\left[^{\circ}C\right]$')
 
 axs[1].plot([], [], color='grey', alpha=0.4, label='Individual Stations')
 axs[1].legend()
@@ -278,3 +272,4 @@ if __name__ == "__main__":
 
     # Save results
     df_meteo_wavg.to_feather(os.path.join(BASE_DIR, '../Data/Meteo/meteo_daily.feather'))
+# %%

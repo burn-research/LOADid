@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Apr 26
-
-@author: hanssens
-"""
-
 #%% Helpers
 
 import os
@@ -120,3 +113,5 @@ if __name__ == "__main__":
     gas_folder = os.path.join(BASE_DIR, '../Data/Gas/Raw')
     df_gas = extract_daily_fluvius_data(gas_folder)
     df_gas.to_feather(os.path.join(BASE_DIR, '../Data/Gas/gas_daily.feather'))
+
+# %%

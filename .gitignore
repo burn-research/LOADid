@@ -2,6 +2,19 @@
 Data/Elec/Raw/*
 Data/Gas/Raw/*
 
+# Ignore Brussels case
+Data/Brussels/*
+
+# Ignore previous model
+Model/Prev/*
+
+# Ignore all pkl files
+*.pkl
+
 # Keep the folders
 !Data/Elec/Raw/.gitkeep
 !Data/Gas/Raw/.gitkeep
+
+!Data/Brussels/.gitkeep
+
+!Model/Prev/.gitkeep

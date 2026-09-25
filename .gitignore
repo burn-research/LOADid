@@ -4,6 +4,7 @@ Data/Gas/Raw/*
 
 # Ignore Brussels case
 Brussels/*
+Data/Brussels/*
 
 # Ignore previous model
 Model/Prev/*
@@ -16,5 +17,6 @@ Model/Prev/*
 !Data/Gas/Raw/.gitkeep
 
 !Brussels/.gitkeep
+!Data/Brussels/.gitkeep
 
 !Model/Prev/.gitkeep
